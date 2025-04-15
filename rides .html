@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keansburg park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ALL IMAGES/logo1.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="ALL IMAGES/logo1.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="rides .html">Rides</a>
+            <a href="games.html">Games</a>
+          <div class="dropdown">
+            <a href="dinnig.html">Dining&Entertainment</a>
+            <div class="dropdown-content">
+              <a href="restaurant.html">Restaurants</a>
+              <a href="desert.html">Desserts</a>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="timing-link" onclick="openHoursModal()">Timing</a>
+          <a href="#" onclick="openContactForm()">Contact Us</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <!-- !..........contact form.........! -->
+        <div class="contact-form-overlay" id="contactFormOverlay">
+          <div class="contact-form">
+            <h3>CONTACT US</h3>
+            <form onsubmit="showThankYou(event)">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+      
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+      
+              <label for="message">FEEDBACK</label>
+              <textarea id="message" name="message" rows="4" placeholder="GIVE ME YOUR FEEDBACK" required></textarea>
+      
+              <button type="submit">SUBMIT</button>
+            </form>
+            <button onclick="closeContactForm()" style="margin-top: 10px; background-color:#a6acaf ;">CLOSE</button>
+          </div>
+        </div>
+      
+        <div class="thank-you-overlay" id="thankYouOverlay">
+          <div class="thank-you-message">
+            <img src="ALL IMAGES/check.png" >
+            <h3>Thank You for Your FeedBack!</h3>
+            <button onclick="closeThankYou()" style="margin-top: 10px; background-color: #22543d; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Close</button>
+          </div>
+        </div>
+      
+    <!-- Hours Popup Modal -->
+  <div id="hoursModal" class="model">
+    <div class="model-content">
+      <span class="close-btn1" onclick="closeHoursModal()">&times;</span>
+      <h2 class="hr">Keansburg Park Time</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Opening</th>
+          <th>Closing</th>
+        </tr>
+        <tr>
+          <td>Monday - Thursday</td>
+          <td>10:00 AM</td>
+          <td>8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>10:00 AM</td>
+          <td>10:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM</td>
+          <td>11:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>9:00 AM</td>
+          <td>9:00 PM</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+      </nav>
+      <div class="rides">
+        <h1>RIDES</h1>
+        <p>Keansburg Amusement Park features exciting rides for all ages, from thrilling roller coasters to nostalgic carousels. Families love the bumper cars and kid-friendly attractions, while thrill-seekers enjoy heart-pounding adventures. The park perfectly blends classic charm with modern fun. It’s a destination for unforgettable memories!</p>
+      </div>
+      <div class="ride1">
+        <img src="ALL IMAGES/carousel.jpeg" alt="">
+        <div class="ride-text">
+          <h2><b>CAROUSEL</b></h2>
+          <p>The carousel ride at Keansburg Amusement Park is a classic attraction featuring beautifully crafted animals and chariots. With its gentle spins and cheerful music, it’s a timeless, family-friendly experience that delights riders of all ages!
+          </p>
+        </div>
+      </div>
+      <div class="ride2">
+        <img src="ALL IMAGES/rollercoaster.jpeg" alt="">
+        <div class="ride-text2">
+          <h2><b>ROLLER COASTER</b></h2>
+          <p>The roller coaster at Keansburg Amusement Park offers an exhilarating experience with high-speed twists, thrilling drops, and sharp turns. Perfect for adventure lovers, it’s a must-try ride that guarantees excitement and unforgettable fun!
+          </p>
+        </div> 
+      </div>
+      <div class="ride3">
+        <img src="ALL IMAGES/carousel.jpeg" alt="">
+        <div class="ride-text3">
+          <h2><b>WATE SLIDE</b></h2>
+          <p>The water rides at Keansburg Amusement Park offer refreshing fun with splashes, twists, and thrilling drops. Perfect for cooling off on a sunny day, they provide excitement and enjoyment for families and adventure seekers alike!
+          </p>
+        </div>
+      </div>
+      <div class="ride2">
+        <img src="ALL IMAGES/ferris wheel.jpg" alt="">
+        <div class="ride-text2">
+          <h2><b>FERRIS WHEEL</b></h2>
+          <p>Keansburg Amusement Park's Ferris wheel offers breathtaking views of Raritan Bay and NYC. It shines with colorful lights at night, blending nostalgia and charm. A timeless favorite for all ages!
+          </p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <BR>
+        <BR>
+        </BR>
+      </BR>
+
+       <!-- !.3..........FOOTER..........! -->
+  <footer>
+    <div class="container">
+      <div class="branding">
+        <h2>Keanaburg Park</h2>
+        <p>Explore. Relax. Enjoy nature.</p>
+      </div>
+
+      <div class="contact">
+        <p>Email: info@keanaburgpark.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Nature Trail, Keanaburg</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <script>document.write(new Date().getFullYear());</script> Keanaburg Park. All rights reserved.
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+      <script>     
+        function openHoursModal() {
+          document.getElementById("hoursModal").style.display = "flex";
+        }
+    
+        function closeHoursModal() {
+          document.getElementById("hoursModal").style.display = "none";
+        }
+    
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+          var hoursModal = document.getElementById("hoursModal");
+          if (event.target == hoursModal) {
+            hoursModal.style.display = "none";
+          }
+        };
+    
+        function openContactForm() {
+          document.getElementById('contactFormOverlay').classList.add('active');
+        }
+    
+        function closeContactForm() {
+          document.getElementById('contactFormOverlay').classList.remove('active');
+        }
+    
+        function showThankYou(event) {
+          event.preventDefault(); // Prevent form submission
+          closeContactForm();
+          document.getElementById('thankYouOverlay').style.display = 'flex';
+        }
+    
+        function closeThankYou() {
+          document.getElementById('thankYouOverlay').style.display = 'none';
+        }
+
+        
+        </script>
+    </body>
+    </html>
+    

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keansburg park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ALL IMAGES/logo1.png">
+</head>
+<body>
+   <!-- ..........disclaimer popup................ -->
+   <div id="popup">
+    <div id="popup-content">
+        <h2>Disclaimer</h2>
+        <p>Keansburg Amusement Park is your destination for fun and excitement! Please follow all safety guidelines to ensure a great experience. The park is not responsible for lost items, injuries, or ride changes. Have an unforgettable adventure!</p>
+        <button id="close-popup">Got it!</button>
+    </div>
+</div>
+   
+    <div class="video-container">
+      <video loop autoplay muted>
+        <source src="ALL IMAGES/amusement park.mp4" type="video/mp4">
+      </video>
+      <a href="ticket.html" class="btn1"><b>BUY TICKETS</b></a>
+    </div>
+    
+      <nav class="navbar">
+        <div class="logo">
+          <img src="ALL IMAGES/logo1.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="rides .html">Rides</a>
+            <a href="games.html">Games</a>
+          <div class="dropdown">
+            <a href="dinnig.html">Dining&Entertainment</a>
+            <div class="dropdown-content">
+              <a href="restaurant.html">Restaurants</a>
+              <a href="desert.html">Desserts</a>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="timing-link" onclick="openHoursModal()">Timing</a>
+          <a href="#" onclick="openContactForm()">Contact Us</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <!-- !..........contact form.........! -->
+        <div class="contact-form-overlay" id="contactFormOverlay">
+          <div class="contact-form">
+            <h3>CONTACT US</h3>
+            <form onsubmit="showThankYou(event)">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+      
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+      
+              <label for="message">FEEDBACK</label>
+              <textarea id="message" name="message" rows="4" placeholder="GIVE ME YOUR FEEDBACK" required></textarea>
+      
+              <button type="submit">SUBMIT</button>
+            </form>
+            <button onclick="closeContactForm()" style="margin-top: 10px; background-color:#a6acaf ;">CLOSE</button>
+          </div>
+        </div>
+      
+        <div class="thank-you-overlay" id="thankYouOverlay">
+          <div class="thank-you-message">
+            <img src="ALL IMAGES/check.png" >
+            <h3>Thank You for Your FeedBack!</h3>
+            <button onclick="closeThankYou()" style="margin-top: 10px; background-color: #22543d; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Close</button>
+          </div>
+        </div>
+      
+    <!-- Hours Popup Modal -->
+  <div id="hoursModal" class="model">
+    <div class="model-content">
+      <span class="close-btn1" onclick="closeHoursModal()">&times;</span>
+      <h2 class="hr">Keansburg Park Time</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Opening</th>
+          <th>Closing</th>
+        </tr>
+        <tr>
+          <td>Monday - Thursday</td>
+          <td>10:00 AM</td>
+          <td>8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>10:00 AM</td>
+          <td>10:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM</td>
+          <td>11:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>9:00 AM</td>
+          <td>9:00 PM</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+      </nav>
+      
+     
+      <!-- Reviews Section -->
+  <div class="reviews-section">
+    <h1>Visitors Reviews</h1>
+
+    <div class="review-card">
+      <img src="ALL IMAGES/family memories.png" alt="John Doe">
+      <div class="review-content">
+        <h3>SIFERT</h3>
+        <p>Had an amazing time with my family. The rides were fantastic!</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <img src="ALL IMAGES/family memories1.png" alt="Jane Smith">
+      <div class="review-content">
+        <h3>ANDERSON</h3>
+        <p>The staff was friendly, and the park was clean and well-maintained.</p>
+        <div class="stars">★★★★☆</div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <img src="ALL IMAGES/family memories 2.jpeg" alt="Mike Johnson">
+      <div class="review-content">
+        <h3>WILLIAMS</h3>
+        <p>Great experience, but the food options could be better.</p>
+        <div class="stars">★★★☆☆</div>
+        <br>
+      
+      </div>
+    </div>
+    <div class="visitor-container">
+      <h2>Capturing Visitors Enjoying Moments</h2>
+      <div class="visitor-enjoy-card">
+        <img src="ALL IMAGES/enjoy ride1.png" class="img1">
+        <img src="ALL IMAGES/enjoy ride.jpeg" class="img2">
+        <img src="ALL IMAGES/enjoy food.jpeg" class="img3">
+      </div>
+
+    </div>
+  </div>
+ 
+    <br>
+  <!-- !.3..........FOOTER..........! -->
+  <footer>
+    <div class="container">
+      <div class="branding">
+        <h2>Keanaburg Park</h2>
+        <p>Explore. Relax. Enjoy nature.</p>
+      </div>
+
+      <div class="contact">
+        <p>Email: info@keanaburgpark.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Nature Trail, Keanaburg</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <script>document.write(new Date().getFullYear());</script> Keanaburg Park. All rights reserved.
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <script>
+        // .........disclaimer popup..........
+        window.addEventListener('load', () => {
+        const popup = document.getElementById('popup');
+        const closeBtn = document.getElementById('close-popup');
+
+        setTimeout(() => {
+            popup.style.display = 'flex';
+        }, 1000);
+
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    });
+        // .......... end popup.......
+        function openHoursModal() {
+      document.getElementById("hoursModal").style.display = "flex";
+    }
+
+    function closeHoursModal() {
+      document.getElementById("hoursModal").style.display = "none";
+    }
+
+    // Close modal when clicking outside the content
+    window.onclick = function(event) {
+      var hoursModal = document.getElementById("hoursModal");
+      if (event.target == hoursModal) {
+        hoursModal.style.display = "none";
+      }
+    };
+
+    function openContactForm() {
+      document.getElementById('contactFormOverlay').classList.add('active');
+    }
+
+    function closeContactForm() {
+      document.getElementById('contactFormOverlay').classList.remove('active');
+    }
+
+    function showThankYou(event) {
+      event.preventDefault(); // Prevent form submission
+      closeContactForm();
+      document.getElementById('thankYouOverlay').style.display = 'flex';
+    }
+
+    function closeThankYou() {
+      document.getElementById('thankYouOverlay').style.display = 'none';
+    }
+    </script>
+</body>
+</html>

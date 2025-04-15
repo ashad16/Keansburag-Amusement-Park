@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keansburg park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ALL IMAGES/logo1.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="ALL IMAGES/logo1.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="rides .html">Rides</a>
+            <a href="games.html">Games</a>
+          <div class="dropdown">
+            <a href="dinnig.html">Dining&Entertainment</a>
+            <div class="dropdown-content">
+              <a href="restaurant.html">Restaurants</a>
+              <a href="desert.html">Desserts</a>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="timing-link" onclick="openHoursModal()">Timing</a>
+          <a href="#" onclick="openContactForm()">Contact Us</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <!-- !..........contact form.........! -->
+        <div class="contact-form-overlay" id="contactFormOverlay">
+          <div class="contact-form">
+            <h3>CONTACT US</h3>
+            <form onsubmit="showThankYou(event)">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+      
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+      
+              <label for="message">FEEDBACK</label>
+              <textarea id="message" name="message" rows="4" placeholder="GIVE ME YOUR FEEDBACK" required></textarea>
+      
+              <button type="submit">SUBMIT</button>
+            </form>
+            <button onclick="closeContactForm()" style="margin-top: 10px; background-color:#a6acaf ;">CLOSE</button>
+          </div>
+        </div>
+      
+        <div class="thank-you-overlay" id="thankYouOverlay">
+          <div class="thank-you-message">
+            <img src="ALL IMAGES/check.png" >
+            <h3>Thank You for Your FeedBack!</h3>
+            <button onclick="closeThankYou()" style="margin-top: 10px; background-color: #22543d; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Close</button>
+          </div>
+        </div>
+      
+    <!-- Hours Popup Modal -->
+  <div id="hoursModal" class="model">
+    <div class="model-content">
+      <span class="close-btn1" onclick="closeHoursModal()">&times;</span>
+      <h2 class="hr">Keansburg Park Time</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Opening</th>
+          <th>Closing</th>
+        </tr>
+        <tr>
+          <td>Monday - Thursday</td>
+          <td>10:00 AM</td>
+          <td>8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>10:00 AM</td>
+          <td>10:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM</td>
+          <td>11:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>9:00 AM</td>
+          <td>9:00 PM</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+      </nav>
+    <div><img src="ALL IMAGES/restaurant2.jpeg" class="restaurant"></div>
+    <div class="dining">
+        <h1>DINNIG & ENTERTAINMENT</h1>
+        <p>​Keansburg Amusement Park offers a variety of dining options and entertainment to enhance your visit.</p>
+      </div>
+      <div class="food1">
+        <img src="ALL IMAGES/pizza.jpg" alt="">
+        <div class="ride-text">
+          <h2><b>SPICY PIZZA</b></h2>
+          <p>Keansburg's Spicy Pizza is a flavorful treat with tangy sauce, melted cheese, and a bold spicy kick. Perfect for a quick bite or a satisfying meal, it’s a must-try for food lovers. Grab a slice and spice up your visit to Keansburg Amusement Park! 🍕🔥
+          </p>
+        </div>
+      </div>
+      <div class="food2">
+        <img src="ALL IMAGES/fries.jpeg" alt="">
+        <div class="ride-text2">
+          <h2><b>CRISPY FRIES</b></h2>
+          <p>Keansburg’s crispy golden fries are the perfect snack to fuel your fun-filled day! Served hot and seasoned to perfection, they’re a classic favorite for all ages. Pair them with your favorite dipping sauce and enjoy the ultimate treat! 🍟
+          </p>
+        </div>
+      </div>
+      <div class="food3">
+        <img src="ALL IMAGES/burger2.jpg" alt="">
+        <div class="ride-text3">
+          <h2><b>BEEF BURGER</b></h2>
+          <p>Keansburg’s juicy beef burger is a crowd-pleaser, packed with flavor and grilled to perfection! Topped with fresh lettuce, tomatoes, and your favorite condiments, it’s the ultimate bite for burger lovers. Satisfy your cravings and fuel up for more fun at the park! 🍔
+          </p>
+        </div>
+      </div>
+      <div class="food4">
+        <img src="ALL IMAGES/wings.jpg" alt="">
+        <div class="food-text">
+          <h2><b>CHICKEN WINGS</b></h2>
+          <p>Keansburg’s flavorful wings are a must-try, coated in your choice of tangy, spicy, or sweet sauces. Perfectly crispy on the outside and tender inside, they’re the ultimate snack or meal for any craving. Grab a plate and savor the bold flavors while enjoying the park vibes! 🍗🔥
+          </p>
+        </div>
+      </div>
+      <br>
+      <br><br><BR></BR>
+      <!-- !.3..........FOOTER..........! -->
+  <footer>
+    <div class="container">
+      <div class="branding">
+        <h2>Keanaburg Park</h2>
+        <p>Explore. Relax. Enjoy nature.</p>
+      </div>
+
+      <div class="contact">
+        <p>Email: info@keanaburgpark.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Nature Trail, Keanaburg</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <script>document.write(new Date().getFullYear());</script> Keanaburg Park. All rights reserved.
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <script>
+        function openHoursModal() {
+          document.getElementById("hoursModal").style.display = "flex";
+        }
+    
+        function closeHoursModal() {
+          document.getElementById("hoursModal").style.display = "none";
+        }
+    
+        // Close modal when clicking outside the content
+        window.onclick = function(event) {
+          var hoursModal = document.getElementById("hoursModal");
+          if (event.target == hoursModal) {
+            hoursModal.style.display = "none";
+          }
+        };
+    
+        function openContactForm() {
+          document.getElementById('contactFormOverlay').classList.add('active');
+        }
+    
+        function closeContactForm() {
+          document.getElementById('contactFormOverlay').classList.remove('active');
+        }
+    
+        function showThankYou(event) {
+          event.preventDefault(); // Prevent form submission
+          closeContactForm();
+          document.getElementById('thankYouOverlay').style.display = 'flex';
+        }
+    
+        function closeThankYou() {
+          document.getElementById('thankYouOverlay').style.display = 'none';
+        }
+        </script>
+    </body>
+    </html>

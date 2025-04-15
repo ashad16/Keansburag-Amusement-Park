@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keansburg park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ALL IMAGES/logo1.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="ALL IMAGES/logo1.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="rides .html">Rides</a>
+            <a href="games.html">Games</a>
+          <div class="dropdown">
+            <a href="dinnig.html">Dining&Entertainment</a>
+            <div class="dropdown-content">
+              <a href="restaurant.html">Restaurants</a>
+              <a href="desert.html">Desserts</a>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="timing-link" onclick="openHoursModal()">Timing</a>
+          <a href="#" onclick="openContactForm()">Contact Us</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <!-- !..........contact form.........! -->
+        <div class="contact-form-overlay" id="contactFormOverlay">
+          <div class="contact-form">
+            <h3>CONTACT US</h3>
+            <form onsubmit="showThankYou(event)">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" placeholder="YOUR NAME" required>
+      
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required>
+      
+              <label for="message">FEEDBACK</label>
+              <textarea id="message" name="message" rows="4" placeholder="GIVE ME YOUR FEEDBACK" required></textarea>
+      
+              <button type="submit">SUBMIT</button>
+            </form>
+            <button onclick="closeContactForm()" style="margin-top: 10px; background-color:#a6acaf ;">CLOSE</button>
+          </div>
+        </div>
+      
+        <div class="thank-you-overlay" id="thankYouOverlay">
+          <div class="thank-you-message">
+            <img src="ALL IMAGES/check.png" >
+            <h3>Thank You for Your FeedBack!</h3>
+            <button onclick="closeThankYou()" style="margin-top: 10px; background-color: #22543d; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Close</button>
+          </div>
+        </div>
+      
+    <!-- Hours Popup Modal -->
+  <div id="hoursModal" class="model">
+    <div class="model-content">
+      <span class="close-btn1" onclick="closeHoursModal()">&times;</span>
+      <h2 class="hr">Keansburg Park Time</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Opening</th>
+          <th>Closing</th>
+        </tr>
+        <tr>
+          <td>Monday - Thursday</td>
+          <td>10:00 AM</td>
+          <td>8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>10:00 AM</td>
+          <td>10:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM</td>
+          <td>11:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>9:00 AM</td>
+          <td>9:00 PM</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+      </nav> 
+      <div class="rides">
+        <h1>GAMES</h1>
+        <p>Keansburg Amusement Park offers a variety of fun games for all ages. From classic carnival games like ring toss and balloon darts to modern arcade challenges, there’s something for everyone. Test your skills, win prizes, and enjoy the excitement. It's the perfect spot for friendly competition and family fun!</p>
+      </div>
+      <div class="ride1">
+        <img src="ALL IMAGES/Balloon-Pop.webp" alt="">
+        <div class="ride-text">
+          <h2><b>BALLOON POP</b></h2>
+          <p>Kneasburg Amusement Park features a fun and classic balloon pop game in its carnival zone. Guests can test their aim by popping colorful balloons with darts to win exciting prizes. The game is perfect for all ages and adds a nostalgic carnival vibe to the park. It's a must-try attraction for anyone visiting the park!
+          </p>
+        </div>
+      </div>
+      <div class="ride2">
+        <img src="ALL IMAGES/whack amole.webp" alt="">
+        <div class="ride-text2">
+          <h2><b>WHACK A MOLE</b></h2>
+          <p>Kneasburg Amusement Park offers a classic Whack-a-Mole game for all ages to enjoy. Grab a mallet and hit the moles as they pop up, testing your speed and reflexes. It's a fun, fast-paced challenge with exciting prizes for top players. A must-try for some nostalgic amusement park fun!
+          </p>
+        </div>
+      </div>
+      <div class="ride3">
+        <img src="ALL IMAGES/basketball.png" alt="">
+        <div class="ride-text3">
+          <h2><b>BASKETBALL</b></h2>
+          <p>Kneasburg Amusement Park features an exciting basketball toss game in its carnival zone. Show off your shooting skills by sinking hoops to win awesome prizes. Whether you're a seasoned player or just trying your luck, it’s a fun challenge for all. Step up and see if you’ve got what it takes to score big! 
+          </p>
+        </div>
+      </div>
+      <div class="ride2">
+        <img src="ALL IMAGES/fish bowl.jpg" alt="">
+        <div class="ride-text2">
+          <h2><b>FISH BALL TOSS</b></h2>
+          <p>Kneasburg Amusement Park’s fish bowl toss game is a timeless favorite in the carnival area. Test your aim by tossing ping pong balls into tiny fish bowls to win fun prizes. It's a game of skill and a little luck, perfect for players of all ages. Give it a try and see if you can land the winning shot!
+          </p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+       <!-- !.3..........FOOTER..........! -->
+  <footer>
+    <div class="container">
+      <div class="branding">
+        <h2>Keanaburg Park</h2>
+        <p>Explore. Relax. Enjoy nature.</p>
+      </div>
+
+      <div class="contact">
+        <p>Email: info@keanaburgpark.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Nature Trail, Keanaburg</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <script>document.write(new Date().getFullYear());</script> Keanaburg Park. All rights reserved.
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  
+      <script>     
+      function openHoursModal() {
+        document.getElementById("hoursModal").style.display = "flex";
+      }
+  
+      function closeHoursModal() {
+        document.getElementById("hoursModal").style.display = "none";
+      }
+  
+      // Close modal when clicking outside the content
+      window.onclick = function(event) {
+        var hoursModal = document.getElementById("hoursModal");
+        if (event.target == hoursModal) {
+          hoursModal.style.display = "none";
+        }
+      };
+  
+      function openContactForm() {
+        document.getElementById('contactFormOverlay').classList.add('active');
+      }
+  
+      function closeContactForm() {
+        document.getElementById('contactFormOverlay').classList.remove('active');
+      }
+  
+      function showThankYou(event) {
+        event.preventDefault(); // Prevent form submission
+        closeContactForm();
+        document.getElementById('thankYouOverlay').style.display = 'flex';
+      }
+  
+      function closeThankYou() {
+        document.getElementById('thankYouOverlay').style.display = 'none';
+      }
+      </script>
+</body>
+</html>
+
